@@ -1,0 +1,36 @@
+node_modules/
+*.log
+
+# Every .env variant, except the committed template. Listing only .env and
+# .env.local let .env.production and friends through.
+.env*
+!.env.example
+
+# Never commit credentials. Service-account JSON files live outside the repo;
+# point at them with env vars (see .env.example). Note Google names a downloaded
+# key <project>-<hex>.json, which matches none of the obvious patterns -- hence
+# the broad *.json rules below, with the config we DO commit re-included.
+*service-account*.json
+*credentials*.json
+client_secret*.json
+sil-*.json
+*.pem
+*.key
+*.p12
+secrets/
+
+# Play install report CSVs, if anyone downloads them into the tree.
+*_overview.csv
+stats_installs_*
+
+# Editor and OS clutter.
+*~
+*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Scratch run files from earlier iterations; output/ is the real record.
+out/
+out-*.json

@@ -1,0 +1,4 @@
+# esbuild (used by tsx and vitest) needs its postinstall to unpack its native
+# binary, so it has to be allowed to run build scripts.
+allowBuilds:
+    esbuild: true
