@@ -1,0 +1,24 @@
+{
+    "name": "bloom-analytics-collector",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "description": "Collects the quarterly LangTech Software Metrics numbers for Bloom products from Mixpanel, Google Play, the Bloom installers bucket and GitHub, and writes a paste-ready grid and report into output/. It never writes to the dashboard spreadsheet.",
+    "packageManager": "pnpm@11.5.2",
+    "scripts": {
+        "collect": "tsx src/cli.ts",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "dependencies": {
+        "@google-cloud/storage": "^7.21.0",
+        "dotenv": "^16.6.1",
+        "google-auth-library": "^9.15.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.20.1",
+        "tsx": "^4.23.1",
+        "typescript": "^5.9.3",
+        "vitest": "^3.2.7"
+    }
+}

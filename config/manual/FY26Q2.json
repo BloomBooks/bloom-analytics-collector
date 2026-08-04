@@ -1,0 +1,22 @@
+{
+    "//": "Hand-entered values for FY26Q2 (Jan-Mar 2026), read off the dashboard as filled in at the time. Recorded so the FY26Q2 output files are a complete record of that quarter, not so they can be pasted again.",
+    "//1": "Supported FTE and Paid FTE have no analytics source. New Projects Started came from the Mixpanel JQL, which our plan cannot run programmatically.",
+
+    "bloomEditor": {
+        "supportedFte": 5.7,
+        "paidFte": 0,
+        "newProjectsStarted": 103
+    },
+    "bloomLibrary": {
+        "supportedFte": 0.1,
+        "paidFte": 0
+    },
+    "bloomReader": {
+        "supportedFte": 0,
+        "paidFte": 0
+    },
+    "bloomPubViewer": {
+        "supportedFte": 0,
+        "paidFte": 0
+    }
+}

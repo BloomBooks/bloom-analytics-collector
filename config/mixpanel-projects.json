@@ -1,0 +1,24 @@
+{
+    "//": "Mixpanel project ids -- the only field the code reads -- plus, for reference, the view and board ids of each project's LangTech Metrics board. Not secrets, so they live here rather than in .env; .env holds only the service-account user and secret.",
+    "//1": "Read these off a Mixpanel URL: mixpanel.com/project/<projectId>/view/<viewId>/app/boards#id=<boardId>",
+    "//2": "Env vars MIXPANEL_PROJECT_ID_* still override these, for a one-off run against a different project.",
+
+    "bloomEditor": {
+        "projectId": "193568",
+        "viewId": null,
+        "boardId": null,
+        "note": "Events carry Language1Iso639Code (not contentLang) and no host, so the 'all' bucket applies. Every event also carries a `channel` property (Release/Beta/Alpha) -- we do NOT currently filter on it; confirm whether the LangTech reports are release-only."
+    },
+    "bloomReaderRelease": {
+        "projectId": "2632443",
+        "viewId": null,
+        "boardId": null,
+        "note": "host is either absent or 'bloomreader' -- both are Bloom Reader, so the 'all' bucket applies. Carries contentLang."
+    },
+    "bloomLibrary": {
+        "projectId": "455693",
+        "viewId": "2511615",
+        "boardId": "10853069",
+        "note": "Holds both bloomlibrary.org and BloomPUB Viewer traffic; the two are separated by the bucket breakdown."
+    }
+}

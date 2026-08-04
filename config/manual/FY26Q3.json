@@ -1,0 +1,23 @@
+{
+    "//": "Hand-entered values for FY26Q3 (Apr-Jun 2026), supplied by the dashboard owner 2026-07-28. These have no analytics source, so without them the paste grid would leave their cells blank.",
+    "//1": "Supported FTE and Paid FTE will always be hand-entered. New Projects Started is here because the Mixpanel JQL it needs ('count - L1 first seen date is in period') cannot be run on our plan; 188 is the figure that query returned.",
+    "//2": "Anything a source later collects automatically wins over the value here, and the clash is reported rather than silently resolved.",
+
+    "bloomEditor": {
+        "supportedFte": 5.2,
+        "paidFte": 0,
+        "newProjectsStarted": 188
+    },
+    "bloomLibrary": {
+        "supportedFte": 0.1,
+        "paidFte": 0
+    },
+    "bloomReader": {
+        "supportedFte": 0,
+        "paidFte": 0
+    },
+    "bloomPubViewer": {
+        "supportedFte": 0,
+        "paidFte": 0
+    }
+}

@@ -1,0 +1,458 @@
+{
+  "period": {
+    "from": "2026-04-01",
+    "to": "2026-06-30",
+    "label": "FY26 Q3 (Apr-Jun 2026)",
+    "slug": "FY26Q3"
+  },
+  "results": [
+    {
+      "product": "bloomEditor",
+      "metric": "latestReleaseVersion",
+      "value": "6.3.2",
+      "status": "ok",
+      "provenance": "s3://bloomlibrary.org/installers, from key installers/BloomInstaller.6.3.2.x64.exe"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "latestReleaseDate",
+      "value": "2026-06-23",
+      "status": "ok",
+      "provenance": "s3://bloomlibrary.org/installers, from key installers/BloomInstaller.6.3.2.x64.exe"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "numberOfReleases",
+      "value": 4,
+      "status": "ok",
+      "provenance": "s3://bloomlibrary.org/installers Release-channel versions in 2026-04-01..2026-06-30: 6.2.8 (2026-04-06), 6.3.0 (2026-05-12), 6.3.1 (2026-05-18), 6.3.2 (2026-06-23)"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "supportedFte",
+      "value": 5.2,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "paidFte",
+      "value": 0,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "downloads",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "We do not collect this."
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "installs",
+      "value": 673,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], installs; 199239 events scanned"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "activeProjects",
+      "value": 854,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], l1Languages; 199239 events scanned"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "newProjectsStarted",
+      "value": 188,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "activeUsers",
+      "value": 2245,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], activeUsers; 199239 events scanned"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "avgMau",
+      "value": 1041.67,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], avgMau; 199239 events scanned"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "mauMonth1",
+      "value": 1096,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], mau-1; 199239 events scanned"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "mauMonth2",
+      "value": 1081,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], mau-2; 199239 events scanned"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "mauMonth3",
+      "value": 948,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], mau-3; 199239 events scanned"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "numberOfUserCountries",
+      "value": 122,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], userCountries; 199239 events scanned"
+    },
+    {
+      "product": "bloomEditor",
+      "metric": "numberOfLanguagesImpacted",
+      "value": 854,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomEditor [all], l1Languages; 199239 events scanned"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "latestReleaseVersion",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "A website has no version number; the dashboard records 'Not versioned'."
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "latestReleaseDate",
+      "value": "2026-06-30",
+      "status": "ok",
+      "provenance": "last successful \"Build and Deploy\" run in BloomBooks/BloomLibrary2 within the period"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "numberOfReleases",
+      "value": 26,
+      "status": "ok",
+      "provenance": "26 successful \"Build and Deploy\" runs in BloomBooks/BloomLibrary2, 2026-04-01..2026-06-30"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "supportedFte",
+      "value": 0.1,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "paidFte",
+      "value": 0,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "downloads",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "n/a for the website"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "installs",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "n/a for the website"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "activeProjects",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "n/a for the website"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "newProjectsStarted",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "n/a for the website"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "activeUsers",
+      "value": 31536,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloomlibrary.org], activeUsers; 712299 events scanned"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "avgMau",
+      "value": 10911,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloomlibrary.org], avgMau; 712299 events scanned"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "mauMonth1",
+      "value": 11696,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloomlibrary.org], mau-1; 712299 events scanned"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "mauMonth2",
+      "value": 10976,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloomlibrary.org], mau-2; 712299 events scanned"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "mauMonth3",
+      "value": 10061,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloomlibrary.org], mau-3; 712299 events scanned"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "numberOfUserCountries",
+      "value": 202,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloomlibrary.org], userCountries; 712299 events scanned"
+    },
+    {
+      "product": "bloomLibrary",
+      "metric": "numberOfLanguagesImpacted",
+      "value": 679,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloomlibrary.org], contentLanguages; 712299 events scanned"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "latestReleaseVersion",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "git tags on BloomBooks/BloomReader: none in 2026-04-01..2026-06-30"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "latestReleaseDate",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "git tags on BloomBooks/BloomReader: none in 2026-04-01..2026-06-30"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "numberOfReleases",
+      "value": 0,
+      "status": "ok",
+      "provenance": "git tags on BloomBooks/BloomReader in 2026-04-01..2026-06-30: none"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "supportedFte",
+      "value": 0,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "paidFte",
+      "value": 0,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "downloads",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "Play Console does not distinguish download from install, and we do not track direct downloads from bloomlibrary.org."
+    },
+    {
+      "product": "bloomReader",
+      "metric": "installs",
+      "value": 2446,
+      "status": "ok",
+      "provenance": "Play install reports (stats_installs_installs_org.sil.bloom.reader_202606_overview.csv), column \"Daily Device Installs\" (202604=814, 202605=990, 202606=642)"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "activeProjects",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "n/a for Bloom Reader"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "newProjectsStarted",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "n/a for Bloom Reader"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "activeUsers",
+      "value": 5453,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomReaderRelease [all], activeUsers; 493669 events scanned"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "avgMau",
+      "value": 2604,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomReaderRelease [all], avgMau; 493669 events scanned"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "mauMonth1",
+      "value": 2699,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomReaderRelease [all], mau-1; 493669 events scanned"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "mauMonth2",
+      "value": 2781,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomReaderRelease [all], mau-2; 493669 events scanned"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "mauMonth3",
+      "value": 2332,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomReaderRelease [all], mau-3; 493669 events scanned"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "numberOfUserCountries",
+      "value": 143,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomReaderRelease [all], userCountries; 493669 events scanned"
+    },
+    {
+      "product": "bloomReader",
+      "metric": "numberOfLanguagesImpacted",
+      "value": 471,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomReaderRelease [all], contentLanguages; 493669 events scanned"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "latestReleaseVersion",
+      "value": "2.2.0",
+      "status": "ok",
+      "provenance": "GitHub BloomBooks/bloompub-viewer latest release in period (tag v2.2.0)"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "latestReleaseDate",
+      "value": "2026-06-30",
+      "status": "ok",
+      "provenance": "GitHub BloomBooks/bloompub-viewer latest release in period (tag v2.2.0)"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "numberOfReleases",
+      "value": 2,
+      "status": "ok",
+      "provenance": "GitHub BloomBooks/bloompub-viewer releases in 2026-04-01..2026-06-30: v2.2.0, v2.1.17"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "supportedFte",
+      "value": 0,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "paidFte",
+      "value": 0,
+      "status": "ok",
+      "provenance": "hand-entered in config\\manual\\FY26Q3.json"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "downloads",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "We do not have this info."
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "installs",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "We do not have this info."
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "activeProjects",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "n/a"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "newProjectsStarted",
+      "value": null,
+      "status": "unavailable",
+      "provenance": "n/a"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "activeUsers",
+      "value": 1363,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloompubviewer], activeUsers; 712299 events scanned"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "avgMau",
+      "value": 454.33,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloompubviewer], avgMau; 712299 events scanned"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "mauMonth1",
+      "value": 445,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloompubviewer], mau-1; 712299 events scanned"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "mauMonth2",
+      "value": 581,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloompubviewer], mau-2; 712299 events scanned"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "mauMonth3",
+      "value": 337,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloompubviewer], mau-3; 712299 events scanned"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "numberOfUserCountries",
+      "value": 30,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloompubviewer], userCountries; 712299 events scanned"
+    },
+    {
+      "product": "bloomPubViewer",
+      "metric": "numberOfLanguagesImpacted",
+      "value": 99,
+      "status": "ok",
+      "provenance": "Mixpanel raw export, bloomLibrary [bloompubviewer], contentLanguages; 712299 events scanned"
+    }
+  ]
+}
