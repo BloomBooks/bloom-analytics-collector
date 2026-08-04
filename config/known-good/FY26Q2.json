@@ -1,0 +1,61 @@
+{
+    "//": "Hand-collected FY26Q2 (Jan-Mar 2026) values, taken from the dashboard as filled in at the time. Used by `pnpm collect --quarter FY26Q2 --compare config/known-good/FY26Q2.json` to check this tool against a quarter a human already did.",
+    "//1": "Dates were given in US M/D/YYYY in the sheet and are normalised to ISO here.",
+    "//2": "'Not versioned' is what the sheet records for the website; the tool reports those as unavailable rather than inventing a string.",
+    "//3": "TWO ENTRIES DEPART FROM THE SHEET, both resolved 2026-07-28. Bloom Editor's latest release: the sheet says 6.2.8 / 2026-04-06, which is AFTER this quarter ended; we report the last release inside the period, so 6.2.7 / 2026-03-16 is the expectation here and the sheet's entry is treated as a mistake.",
+    "//6": "Bloom Reader's installs expectation is 1573, NOT the 2434 originally recorded on the sheet. The dashboard defines Installs as 'Unique first-run', and 2434 came from Play Console's events-based 'All device acquisitions' metric, which counts re-installs. The uniques-based metric Google calls 'Device acquisition > New devices' reads 482 + 486 + 602 = 1570 for these months, matching the bulk report column Daily Device Installs (1573) within the tolerance. The 1573 here was later reproduced exactly from the bulk reports themselves, so it is confirmed rather than inferred. The same error affects FY26Q1, where 2193 was recorded and the correct figure is 1344 -- an overcount of 63%, against 55% here. See config/play-installs-recorded.json for the monthly series behind all of this.",
+    "//5": "Number of User Countries is expected to differ slightly. We count distinct mp_country_code on events; the ad-hoc report used for the sheet counted $country_code on people profiles -- last-known country per user rather than country at event time. Bloom Editor's 108 vs 104 is that difference and is expected to be flagged; the others are within event-timing drift.",
+    "//4": "Bloom Reader's user metrics are recorded here as this tool computes them, not as the sheet had them (activeUsers 4452, avgMau 2154, MAU 2256/2149/2057). The sheet's figures were NOT wrong -- they were correct when collected. The gap is late-arriving events: it scales with how recent the month is (Jan +10.6%, Feb +15.3%, Mar +21.6%) and affects only Bloom Reader, the offline-first Android app, whose events upload when a device next has connectivity. Bloom Editor, Bloom Library and BloomPUB Viewer all matched the sheet exactly. The drift is still measurable: across three runs in one afternoon, Bloom Reader's activeUsers went 5435 -> 5437 -> 5453 for FY26Q3. So a quarter collected soon after it ends will read lower than the same quarter collected months later, and comparability depends on collecting at a consistent lag.",
+
+    "bloomEditor": {
+        "latestReleaseVersion": "6.2.7",
+        "latestReleaseDate": "2026-03-16",
+        "numberOfReleases": 9,
+        "installs": 629,
+        "activeProjects": 701,
+        "newProjectsStarted": 103,
+        "activeUsers": 2061,
+        "avgMau": 958.7,
+        "mauMonth1": 864,
+        "mauMonth2": 911,
+        "mauMonth3": 1101,
+        "numberOfUserCountries": 104,
+        "numberOfLanguagesImpacted": 701
+    },
+    "bloomLibrary": {
+        "numberOfReleases": 41,
+        "latestReleaseDate": "2026-03-26",
+        "activeUsers": 31011,
+        "avgMau": 10801.0,
+        "mauMonth1": 11043,
+        "mauMonth2": 10558,
+        "mauMonth3": 10802,
+        "numberOfUserCountries": 201,
+        "numberOfLanguagesImpacted": 681
+    },
+    "bloomReader": {
+        "latestReleaseVersion": "3.4.5",
+        "latestReleaseDate": "2026-02-05",
+        "numberOfReleases": 1,
+        "installs": 1573,
+        "activeUsers": 4939,
+        "avgMau": 2491.33,
+        "mauMonth1": 2496,
+        "mauMonth2": 2477,
+        "mauMonth3": 2501,
+        "numberOfUserCountries": 150,
+        "numberOfLanguagesImpacted": 474
+    },
+    "bloomPubViewer": {
+        "latestReleaseVersion": "2.1.16",
+        "latestReleaseDate": "2026-02-17",
+        "numberOfReleases": 3,
+        "activeUsers": 1301,
+        "avgMau": 433.7,
+        "mauMonth1": 255,
+        "mauMonth2": 663,
+        "mauMonth3": 383,
+        "numberOfUserCountries": 28,
+        "numberOfLanguagesImpacted": 87
+    }
+}

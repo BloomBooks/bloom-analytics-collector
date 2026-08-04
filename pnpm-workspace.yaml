@@ -1,0 +1,30 @@
+# esbuild (used by tsx and vitest) needs its postinstall to unpack its native
+# binary, so it has to be allowed to run build scripts.
+allowBuilds:
+    esbuild: true
+
+# Don't install a version published within the last day. A compromised release of
+# a popular package is usually caught and pulled within hours, so waiting a day
+# avoids being the one to find it. Expressed in minutes.
+#
+# This is NOT a pnpm default -- pnpm's own default is 0, meaning off. It also does
+# not hold back security fixes: pnpm exempts a version that resolves a known
+# advisory from the age check.
+minimumReleaseAge: 1440
+
+# @google-cloud/storage 7.21.0 -- the newest there is -- still depends on gaxios 6,
+# which pins uuid ^9, and uuid below 11.1.1 has an advisory: v3, v5 and v6 skip a
+# bounds check when the caller supplies its own buffer. So no amount of updating
+# our own dependencies clears it; the fix has to be forced here.
+#
+# 11.1.1 rather than the current 14: it is the lowest patched version, and it still
+# ships a CommonJS entry point. uuid 14 is ESM-only, and gaxios is CommonJS code
+# doing require("uuid"), so 14 would risk breaking the Google client at runtime to
+# fix a function the Google client never calls -- it uses only v4(), for a multipart
+# boundary, and v4 is not what the advisory is about.
+#
+# Note: this belongs here, not in package.json. pnpm 11 no longer reads a "pnpm"
+# field there and ignores overrides placed in it.
+overrides:
+    uuid@<11.1.1: ^11.1.1
+

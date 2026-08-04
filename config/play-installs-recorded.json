@@ -1,0 +1,58 @@
+{
+    "//": "Bloom Reader monthly installs, recorded 2026-08-03. Two independent readings of what should be the same measure, kept together because they do not entirely agree.",
+    "//1": "bulkReport: the 'Daily Device Installs' column of the monthly installs_<package>_YYYYMM_overview.csv files, summed. This is the authoritative series -- it is the one the collector reads, and it reproduced the earlier hand-downloaded figures for FY26Q2 and FY26Q3 exactly.",
+    "//2": "consoleChart: Play Console > 'New device acquisitions' with the metric set to Unique devices / Per interval / Monthly, read off the data table by hand.",
+    "//3": "Both are supposed to be Play's uniques-based measure, which is what the dashboard's 'Unique first-run' definition asks for. The events-based alternatives ('Install events', 'All device acquisitions' in the UI) count re-installs and run 55-63% higher; the figures originally recorded on the sheet for FY26Q1 and FY26Q2 came from those by mistake.",
+    "//4": "The two series agree exactly for 5 of 9 months and differ by 3 to 16 in the other 4. An earlier guess that this was month-boundary bucketing is WRONG and should not be repeated: a boundary shift would move installs into the adjacent month, so neighbours would offset and quarter totals would nearly match. Instead October and December agree exactly while November differs by 16. The cause is not established -- most likely the charted metric and the bulk export are computed by different pipelines or refreshed at different times. Prefer bulkReport.",
+    "//5": "Every month's file was checked for complete day coverage when read: 31/30/31, 31/28/31, 30/31/30. No file was short.",
+
+    "bulkReport": {
+        "2025-10": 505,
+        "2025-11": 476,
+        "2025-12": 363,
+        "2026-01": 482,
+        "2026-02": 486,
+        "2026-03": 605,
+        "2026-04": 814,
+        "2026-05": 990,
+        "2026-06": 642
+    },
+
+    "consoleChart": {
+        "2025-10": 505,
+        "2025-11": 492,
+        "2025-12": 363,
+        "2026-01": 482,
+        "2026-02": 486,
+        "2026-03": 602,
+        "2026-04": 821,
+        "2026-05": 1001,
+        "2026-06": 642,
+        "2026-07": 604
+    },
+
+    "quarters": {
+        "//": "Fiscal quarters; FY26 starts in October 2025. 'installs' is the figure to use. 'sheet' is what was originally recorded on the dashboard, from the wrong metric.",
+        "FY26Q1": {
+            "months": "2025-10..2025-12",
+            "installs": 1344,
+            "consoleChart": 1360,
+            "sheet": 2193,
+            "note": "No bulk figure existed for this quarter until now; the sheet's 2193 overstates it by 63%."
+        },
+        "FY26Q2": {
+            "months": "2026-01..2026-03",
+            "installs": 1573,
+            "consoleChart": 1570,
+            "sheet": 2434,
+            "note": "1573 matches the hand-downloaded figure recorded in config/known-good/FY26Q2.json exactly. The sheet's 2434 overstates it by 55%."
+        },
+        "FY26Q3": {
+            "months": "2026-04..2026-06",
+            "installs": 2446,
+            "consoleChart": 2464,
+            "sheet": null,
+            "note": "2446 matches what output/FY26Q3 already records, so that committed quarter needs no correction."
+        }
+    }
+}

@@ -1,0 +1,40 @@
+node_modules/
+*.log
+
+# Every .env variant, except the committed template. Listing only .env and
+# .env.local let .env.production and friends through.
+.env*
+!.env.example
+
+# Never commit credentials. Service-account JSON files live outside the repo;
+# point at them with env vars (see .env.example).
+#
+# Google names a downloaded key <project-id>-<12 hex chars>.json, which matches
+# none of the obvious credential patterns -- so the last rule below matches that
+# shape directly. It is deliberately specific rather than a broad *.json ignore:
+# this repo commits JSON on purpose (config/, output/, package.json), and a broad
+# rule with re-includes is the kind of thing that silently stops working.
+*service-account*.json
+*credentials*.json
+client_secret*.json
+*-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].json
+*.pem
+*.key
+*.p12
+secrets/
+
+# Play install report CSVs, if anyone downloads them into the tree.
+*_overview.csv
+stats_installs_*
+
+# Editor and OS clutter.
+*~
+*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Scratch run files from earlier iterations; output/ is the real record.
+out/
+out-*.json
