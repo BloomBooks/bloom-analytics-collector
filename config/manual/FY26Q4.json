@@ -1,0 +1,9 @@
+{
+    "//": "Hand-entered values for FY26Q4 (Jul-Sep 2026). These have no analytics source, so without them the paste grid would leave their cells blank.",
+    "//1": "New Projects Started is here because the Mixpanel JQL it needs ('count - L1 first seen date is in period') cannot be run on our plan; 102 is the figure that query returned, run by hand 2026-10-07. Supported FTE and Paid FTE are still to be supplied.",
+    "//2": "Anything a source later collects automatically wins over the value here, and the clash is reported rather than silently resolved.",
+
+    "bloomEditor": {
+        "newProjectsStarted": 102
+    }
+}
