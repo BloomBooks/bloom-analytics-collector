@@ -43,8 +43,12 @@ const loadCache = async (): Promise<TagDateCache> => {
 };
 
 const saveCache = async (cache: TagDateCache): Promise<void> => {
+    // Numeric collation, so v3.4.8 sorts before v3.4.68 rather than after it --
+    // a plain string sort scatters each new tag through the file.
     const ordered = Object.fromEntries(
-        Object.entries(cache).sort(([a], [b]) => a.localeCompare(b))
+        Object.entries(cache).sort(([a], [b]) =>
+            a.localeCompare(b, "en", { numeric: true })
+        )
     );
     await writeFile(
         cachePath,
